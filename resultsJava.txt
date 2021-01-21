@@ -1,12 +1,18 @@
 package helloWorld;
 
+import java.util.Scanner;
+
 public class Results {
 
 	public static void main(String[] args) {
-		int chemMark = 0;
-		int bioMark = 0;
-		int physMark = 0;
-		int totalMark = 0;
+	    Scanner myObj = new Scanner(System.in);
+	    System.out.println("Enter Chemistry mark = ");
+		int chemMark = myObj.nextInt();
+	    System.out.println("Enter Biology mark = ");
+		int bioMark = myObj.nextInt();
+	    System.out.println("Enter Physics mark = ");
+		int physMark = myObj.nextInt();
+		int totalMark = chemMark + bioMark + physMark;
 		int totalPercentage = 0;
 
 		displayResults(bioMark, chemMark, physMark, totalMark);
