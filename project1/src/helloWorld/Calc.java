@@ -1,6 +1,6 @@
 package helloWorld;
 
-public class Calculator {
+public class Calc {
 
 	public static void main(String[] args) {
 		System.out.println(division(10, 11));
