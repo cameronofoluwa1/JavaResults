@@ -71,13 +71,16 @@ public class Flowcharts {
 		} else {
 			if (int1 != int2 && int2 == int3) {
 				print("Total = " + int1);
-			} if (int1 != int3 && int2 == int3) {
+			}
+			if (int1 != int3 && int2 == int3) {
 				print("Total = " + int1);
-			} if (int2 != int3 && int1 == int3) {
+			}
+			if (int2 != int3 && int1 == int3) {
 				print("Total = " + int2);
-			} if (int3 != int2 && int1 == int2) {
+			}
+			if (int3 != int2 && int1 == int2) {
 				print("Total = " + int3);
-			}else {
+			} else {
 				print("Total = " + (int1 + int2 + int3));
 			}
 		}
