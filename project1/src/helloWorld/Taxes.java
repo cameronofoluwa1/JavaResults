@@ -4,7 +4,7 @@ public class Taxes {
 
 	int salary = 0;
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		System.out.println(method1(45000));
 		System.out.println("You will end up paying £" + method2(45000) + " tax");
 	}

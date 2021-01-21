@@ -6,7 +6,7 @@ public class Flowcharts {
 		blackjack(1, 22);
 	}
 
-	public static int newMethod(int int1, int int2, boolean newBool) {
+	public static int newMethod(int int1, int int2, boolean newBool){
 		if (newBool == false) {
 			return int1 * int2;
 		} else {
