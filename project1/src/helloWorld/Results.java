@@ -17,7 +17,7 @@ public class Results {
 
 		displayResults(bioMark, chemMark, physMark, totalMark);
 
-		System.out.println("\nPercentage " + displayPercentage(totalMark));
+		System.out.println("\nPercentage " + displayPercentage(totalMark, bioMark, chemMark, physMark) +"%");
 	}
 
 	public static void displayResults(int bioMark, int chemMark, int physMark, int totalMark) {
@@ -25,11 +25,19 @@ public class Results {
 		System.out.println("Biology : " + bioMark);
 		System.out.println("Chemistry : " + chemMark);
 		System.out.println("Physics : " + physMark);
-		System.out.print("Total : " + totalMark);
+		System.out.println("Total : " + totalMark);
 	}
 
-	public static int displayPercentage(int totalMark) {
+	public static int displayPercentage(int totalMark, int bioMark, int chemMark, int physMark) {
 		int totalPercentage = (totalMark * 100) / 450;
-		return totalPercentage;
+		if (totalPercentage >= 60) {
+			if(((bioMark*100) / 150) >= 60 || ((chemMark*100) / 150) > 60 || ((physMark*100) / 150) > 60) {
+				System.out.println("Congratulations, you passed!");
+			}else {
+				System.out.println("\nOops, you got less than 60% on one of your exams. You failed.");
+			}
+		}else {
+			System.out.println("\nOops, you got less than 60%. You failed.");
+		}return totalPercentage;
 	}
 }
