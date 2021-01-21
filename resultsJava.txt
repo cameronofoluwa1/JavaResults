@@ -1,0 +1,30 @@
+package helloWorld;
+
+public class Results {
+
+	public static void main(String[] args) {
+		int chemMark = 0;
+		int bioMark = 0;
+		int physMark = 0;
+		int totalMark = 0;
+		int totalPercentage = 0;
+
+		displayResults(bioMark, chemMark, physMark, totalMark);
+
+		System.out.println("\nPercentage " + displayPercentage(totalMark));
+	}
+
+	public static void displayResults(int bioMark, int chemMark, int physMark, int totalMark) {
+		System.out.println("====== RESUULTS ======");
+		System.out.println("Biology : " + bioMark);
+		System.out.println("Chemistry : " + chemMark);
+		System.out.println("Physics : " + physMark);
+		System.out.print("Total : " + totalMark);
+	}
+
+	public static int displayPercentage(int totalMark) {
+		int totalPercentage = (totalMark * 100) / 450;
+		return totalPercentage;
+	}
+}
+
